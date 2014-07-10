@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class LuceneSearchTest {
 
-	public final static String INDEX_STORE_PATH = "f:/lucene/index"; // 索引的存放位置
+	public final static String INDEX_STORE_PATH = "f:/lucene/ch02/index"; // 索引的存放位置
 
 	@Test
 	public void testSearch() {
