@@ -1,5 +1,9 @@
 package me.irfen.lucene.ch02;
 
+import java.io.File;
+
+import me.irfen.lucene.ch03.TikaBasicUtil;
+
 import org.junit.Test;
 
 public class LuceneIndexTest {
@@ -19,4 +23,5 @@ public class LuceneIndexTest {
 		System.out.println("建立索引用时" + (end - start) + "毫秒");
 		indexer.close();
 	}
+
 }
