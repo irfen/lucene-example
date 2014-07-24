@@ -1,9 +1,5 @@
 package me.irfen.lucene.ch02;
 
-import java.io.File;
-
-import me.irfen.lucene.ch03.TikaBasicUtil;
-
 import org.junit.Test;
 
 public class LuceneIndexTest {
