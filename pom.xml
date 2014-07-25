@@ -48,5 +48,11 @@
 			<artifactId>tika-parsers</artifactId>
 			<version>${tika.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>IKAnalyzer</groupId>
+			<artifactId>IKAnalyzer</artifactId>
+			<version>2012FF_hf1</version>
+		</dependency>
 	</dependencies>
 </project>
