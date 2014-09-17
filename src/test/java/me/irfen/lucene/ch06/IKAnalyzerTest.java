@@ -16,6 +16,7 @@ import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.Terms;
 import org.apache.lucene.index.TermsEnum;
 import org.apache.lucene.search.DocIdSetIterator;
+import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.BytesRef;
@@ -96,5 +97,17 @@ public class IKAnalyzerTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	@Test
+	public void testSearch() {
+		LuceneIKSearch test = new LuceneIKSearch(INDEX_STORE_PATH);
+		TopDocs h = null;
+		h = test.search("一");
+		test.printResult(h);
+		h = test.search("代码");
+		test.printResult(h);
+		h = test.search("什么");
+		test.printResult(h);
 	}
 }
